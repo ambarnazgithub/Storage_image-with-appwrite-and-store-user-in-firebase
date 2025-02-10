@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="card">
+        <h1>Create a Post</h1>
+
+        <textarea placeholder="Type Something..." id="content" class="spacing"></textarea>
+        <input type="file" id="imageFile" class="spacing">
+        <button id="post-btn">+ Add Post</button>
+    </div>
+
+    <script type="module" src="src/auth.js"></script>
+    <script type="module" src="src/post.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
+</body>
+</html>
