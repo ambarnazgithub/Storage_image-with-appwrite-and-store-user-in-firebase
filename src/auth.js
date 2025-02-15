@@ -17,7 +17,7 @@ const handleSignup = () => {
   if (email && password) {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
-        // console.log(userCredentials.user.uid);
+         console.log(userCredentials.user.uid);
         const usersRef = ref(database, `users/${userCredentials.user.uid}/`);
         set(usersRef, {
           email,
@@ -46,3 +46,4 @@ onAuthStateChanged(auth, (user) => {
     }
   }
 });
+

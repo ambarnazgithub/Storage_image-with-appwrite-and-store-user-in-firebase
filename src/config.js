@@ -7,7 +7,7 @@ import {
 import {
   getDatabase,
   set,
-  ref,
+  ref,push,onChildAdded,
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-database.js";
 
 const firebaseConfig = {
@@ -30,5 +30,5 @@ export {
   database,
   ref,
   set,
-  onAuthStateChanged,
+  onAuthStateChanged,push,onChildAdded
 };
